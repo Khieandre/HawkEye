@@ -150,6 +150,104 @@ We can go ahead and pull up packet 204 and locate the DNS Query field, where we 
 <br/>
 <br/>
 
+<h3>Question #11 </h3>
+What is the IP of the domain in the previous question? <br/>
+<br/>
+<img src="https://i.imgur.com/RXUBxrk.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+<br />
+If We Check the details of the previous packet, we can see that there is a destination IP address <br/>
+<br/>
+<img src="https://i.imgur.com/pFrOrpY.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+<h3>Question #12 </h3>
+ Indicate the country to which the IP in the previous section belongs. <br/>
+<br/>
+<img src="https://i.imgur.com/6LLHBiS.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+<br />
+We can use IP Geolocation to get the location of the IP<br/>
+<br/>
+<img src="https://i.imgur.com/9kbhryd.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+<h3>Question #13 </h3>
+Q13: What operating system does the victim’s computer run? <br/>
+<br/>
+<img src="https://i.imgur.com/6LLHBiS.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+By examining the HTTP User-Agent of the computer, we can initiate the operating system on the system. <br/>
+Among several HTTP logs in this capture, only the one originating from the browser at proforma-invoices.com appears relevant. <br/>
+Consequently, we can determine the operating system running on the machine based on the information in the mentioned header. It appears that our target is using Windows NT 6.1.<br/>
+<br/>
+
+<h3>Question #14 </h3>
+What is the name of the malicious file downloaded by the accountant? <br/>
+<br/>
+<img src="https://i.imgur.com/CkZbkwU.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+<br />
+We will need to extract the information needed, Hence, File > Export Objects > HTTP to get the objects. <br/>
+<br/>
+<img src="https://i.imgur.com/qU4Fatx.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+<h3>Question #15 </h3>
+What is the md5 hash of the downloaded file? <br/>
+<br/>
+<img src="https://i.imgur.com/gd1ViW3.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+<br />
+Once we extract the Http above, we can use Virus total to get the MD5 Hash <br/>
+<br/>
+<img src="https://i.imgur.com/XWwyevn.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+<h3>Question #16 </h3>
+What software runs the webserver that hosts the malware?? <br/>
+<br/>
+<img src="https://i.imgur.com/XB6E11k.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+Choosing the malicious file from the HTTP object list will simultaneously highlight the packet indicating the commencement of the HTTP stream. <br/>
+Utilizing the Follow > HTTP Stream option allows us to capture the entire stream. <br/>
+Analyzing the followed HTTP headers data enables us to identify the web server operating on the server. <br/>
+<br/>
+<img src="https://i.imgur.com/O4KwKzN.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+<h3>Question #17 </h3>
+What is the md5 hash of the downloaded file? <br/>
+<br/>
+<img src="https://i.imgur.com/gd1ViW3.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+Examining the HTTP object list reveals communication with another site named bot[.]whatismyipaddress[.]com, a recognized service for obtaining a computer's Public IP Address. <br/>
+Choosing the HTTP object record will also highlight the packet signifying the initiation of the HTTP stream. By utilizing Follow > HTTP Stream, <br/> 
+we can capture the complete stream. Analyzing the following HTTP headers data lets us retrieve the public IP address. <br/>
+<br/>
+<img src="https://i.imgur.com/U7t50AZ.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/>
+
+
+<h3>Question #18 </h3>
+What is the md5 hash of the downloaded file? <br/>
+<br/>
+<img src="https://i.imgur.com/gd1ViW3.png" height="80%" width="80%" alt="Question 3"/>
+<br />
+Examining the HTTP object list reveals communication with another site named bot[.]whatismyipaddress[.]com, a recognized service for obtaining a computer's Public IP Address. <br/>
+Choosing the HTTP object record will also highlight the packet signifying the initiation of the HTTP stream. By utilizing Follow > HTTP Stream, <br/> 
+we can capture the complete stream. Analyzing the following HTTP headers data lets us retrieve the public IP address. <br/>
+<br/>
+<img src="https://i.imgur.com/U7t50AZ.png" height="80%" width="80%" alt="Answer 3"/>
+<br/>
+<br/
+
 
 
 <!--
